@@ -44,8 +44,8 @@ echo 'Stream is NULL or Invalid Type Number';
 }
 else
 {
-	session_start();
-	$stream_play = $stream . "&s=".$token;
+    session_start();
+    $stream_play = $stream . "&s=".$token;
     session_destroy();
 }
 ?>
@@ -63,12 +63,12 @@ else
       <script>
         var player = new Clappr.Player({
             source: '<?php echo $stream_play; ?>',
-			width: '100%',
-	        height: '100%',
-			poster: 'https://png.kodi.al/tv/albdroid/black.png',
-	        watermark: 'https://png.kodi.al/tv/albdroid/logo.png',
-	        position: 'top-right',
-	        //watermarkLink: '',
+	    width: '100%',
+            height: '100%',
+            poster: 'https://png.kodi.al/tv/albdroid/black.png',
+            watermark: 'https://png.kodi.al/tv/albdroid/logo.png',
+            position: 'top-right',
+           //watermarkLink: '',
             parentId: "#player",
             autoPlay: true,
             rtmpConfig: {
