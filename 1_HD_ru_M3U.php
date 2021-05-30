@@ -43,7 +43,7 @@ echo 'Stream is NULL or Invalid Type Number';
 }
 else
 {
-	session_start();
+    session_start();
     header('Access-Control-Allow-Origin: *');
     header('Content-type: application/json');
     echo "#EXTM3U Albdroid PHP Streaming Tools => USE ?type=0 to 3\n";
